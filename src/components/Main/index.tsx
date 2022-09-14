@@ -6,9 +6,9 @@ import { Search } from './components/Search';
 import style from './main.module.scss';
 
 export const Main: FC = () => {
-	useEffect(() => {
-		// dispatch(getUsersThunk());
-	}, []);
+	// useEffect(() => {
+
+	// }, []);
 
 	return (
 		<main className={style.main}>

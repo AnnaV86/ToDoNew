@@ -8,6 +8,7 @@
 
 	.input {
 		@include sizeBlock(450px, 40px);
+		padding-left: 10px;
 		border-radius: 5px;
 		border: none;
 		background-color: $colorMainLight;

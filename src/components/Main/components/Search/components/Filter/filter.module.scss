@@ -5,14 +5,14 @@
 	@include sizeBlock(400px, 40px);
 	@include displayFlex(row, space-around, center);
 
-	// button {
-	// 	@include sizeBlock(150px, 40px);
-	// 	@include font(15px, 10px);
-	// 	border-radius: 5px;
-	// 	background-color: $colorMainLight;
-	// 	border: none;
-	// 	cursor: pointer;
-	// 	color: $colorMainDark;
-	// 	margin-left: 10px;
-	// }
+	button {
+		@include sizeBlock(150px, 40px);
+		@include font(15px, 10px);
+		border-radius: 5px;
+		background-color: $colorMainLight;
+		border: none;
+		cursor: pointer;
+		color: $colorMainDark;
+		margin-left: 10px;
+	}
 }

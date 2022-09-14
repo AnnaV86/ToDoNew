@@ -25,19 +25,19 @@
 }
 
 //button
-@mixin button($colorBg, $colorText, $colorSh) {
+@mixin button($colorBg, $colorText) {
 	border: unset;
 	border-radius: 5px;
 	background-color: unset;
 	color: $colorText;
 	background-color: $colorBg;
-	box-shadow: 2px 2px 2px 2px $colorSh;
 	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-@mixin buttonHover($colorBg, $colorText, $colorSh) {
+@mixin buttonHover($colorBg, $colorText) {
 	background-color: $colorBg;
 	color: $colorText;
 	font-weight: 800;
-	box-shadow: 2px 2px 12px 5px $colorSh;
 }

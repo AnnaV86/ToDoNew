@@ -1,6 +1,3 @@
 {
-	"toDo": [
-		{ "name": "Vasya", "age": 39, "id": "1fgkd" },
-		{ "name": "Masha", "age": 25, "id": "er2df" }
-	]
+	"toDo": []
 }

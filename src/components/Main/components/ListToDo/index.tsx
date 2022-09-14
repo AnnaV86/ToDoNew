@@ -6,7 +6,12 @@ import { ToDo } from './ToDo';
 
 export const ListToDo: FC = () => {
 	const [listToDo, setListToDo] = useState<IToDo[]>([
-		{ id: '1', title: 'Позавтракать', important: false, completed: true },
+		{
+			id: '1',
+			title: 'Позавтракать',
+			important: false,
+			completed: true
+		},
 		{ id: '2', title: 'Работа', important: true, completed: true },
 		{
 			id: '3',

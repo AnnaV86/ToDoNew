@@ -8,18 +8,47 @@
 
 	.title {
 		@include font(20px, 20px);
+		width: 610px;
 		color: $colorMainDark;
 		margin: 0;
+		text-align: start;
 	}
 
 	.buttons {
-		width: 150px;
+		width: 200px;
 		@include displayFlex(row, flex-end, center);
 	}
 
 	button {
 		@include sizeBlock(30px, 30px);
+		@include button($colorMainLight, $colorMainDark);
 		margin-left: 20px;
 		cursor: pointer;
+	}
+
+	.buttonImport {
+		margin: 0;
+		margin-right: 20px;
+		background-image: url(../../../../../images/star_line.svg);
+	}
+
+	.buttonImportActive {
+		background-image: url(../../../../../images/check_circle_line.svg);
+	}
+
+	.buttonComplet {
+		background-image: url(../../../../../images/check_circle_line.svg);
+	}
+
+	.buttonCompletActive {
+		background-image: url(../../../../../images/check_circle_fill.svg);
+	}
+
+	.buttonUpdate {
+		background-image: url(../../../../../images/pen_2_fill.svg);
+	}
+
+	.buttonDelete {
+		background-image: url(../../../../../images/delete_line.svg);
 	}
 }
