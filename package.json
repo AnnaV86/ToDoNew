@@ -1,7 +1,7 @@
 {
-	"name": "",
+	"name": "ToDoList",
 	"version": "1.0.0",
-	"description": "",
+	"description": "Тестовое задание для АПРИКОД",
 	"scripts": {
 		"start": "webpack serve --config webpack.dev.ts --open",
 		"build": "webpack --config webpack.prod.ts",

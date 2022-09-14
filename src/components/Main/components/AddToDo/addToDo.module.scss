@@ -31,3 +31,38 @@
 		}
 	}
 }
+
+@media screen and (max-width: 920px) {
+	.container {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		.input {
+			@include font(16px, 10px);
+		}
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.container {
+		.button {
+			@include font(13px, 10px);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		margin-top: 20px;
+		.input {
+			@include font(13px, 10px);
+		}
+
+		.button {
+			margin-left: 5px;
+		}
+	}
+}

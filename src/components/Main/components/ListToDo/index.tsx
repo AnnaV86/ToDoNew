@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import { IToDo } from '../../../../models';
 
 import style from './listToDo.module.scss';

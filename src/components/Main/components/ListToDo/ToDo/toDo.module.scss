@@ -54,3 +54,26 @@
 		background-image: url(../../../../../images/delete_line.svg);
 	}
 }
+
+@media screen and (max-width: 720px) {
+	.container {
+		.title {
+			@include font(16px, 15px);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		.title {
+			width: 90%;
+			@include font(13px, 10px);
+		}
+
+		button {
+			@include sizeBlock(20px, 20px);
+			background-size: contain;
+			margin-left: 5px;
+		}
+	}
+}

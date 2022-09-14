@@ -12,14 +12,17 @@ export const AddToDo: FC = React.memo(() => {
 	};
 
 	const onClickAddTodo = () => {
-		const newTodo = {
-			id: nanoid(),
-			title: value,
-			important: false,
-			completed: false
-		};
-		todos.addTodo(newTodo);
-		setValue('');
+		if (value) {
+			const newTodo = {
+				id: nanoid(),
+				title: value,
+				important: false,
+				completed: false
+			};
+			todos.addTodo(newTodo);
+			setValue('');
+		}
+		return;
 	};
 
 	return (

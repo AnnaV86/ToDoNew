@@ -2,6 +2,7 @@
 @import '../../../../styles/variables.scss';
 
 .buttons {
+	margin-top: 20px;
 	@include sizeBlock(800px, 40px);
 	@include displayFlex(row, space-between, center);
 
@@ -18,5 +19,34 @@
 		&:hover {
 			@include buttonHover;
 		}
+
+		&:focus {
+			border: 2px solid $colorMainDark;
+		}
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.buttons {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.buttons {
+		flex-wrap: wrap;
+
+		button {
+			@include sizeBlock(110px, 40px);
+			@include font(13px, 10px);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.buttons {
+		margin-top: 0;
+		height: 95px;
+		justify-content: center;
 	}
 }
