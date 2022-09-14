@@ -1,0 +1,25 @@
+@import '../../../../../styles/mixins.scss';
+@import '../../../../../styles/variables.scss';
+
+.container {
+	border-bottom: 1px solid $colorMainDark;
+	@include displayFlex(row, space-between, center);
+	padding: 5px;
+
+	.title {
+		@include font(20px, 20px);
+		color: $colorMainDark;
+		margin: 0;
+	}
+
+	.buttons {
+		width: 150px;
+		@include displayFlex(row, flex-end, center);
+	}
+
+	button {
+		@include sizeBlock(30px, 30px);
+		margin-left: 20px;
+		cursor: pointer;
+	}
+}

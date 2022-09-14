@@ -1,0 +1,10 @@
+@import '../../styles/mixins.scss';
+
+.main {
+	@include displayFlexCenter(column);
+	padding: 20px;
+
+	.title {
+		@include font(60px, 16px);
+	}
+}
