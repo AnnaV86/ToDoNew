@@ -36,8 +36,8 @@
 	background-position: center;
 }
 
-@mixin buttonHover($colorBg, $colorText) {
-	background-color: $colorBg;
-	color: $colorText;
-	font-weight: 800;
+@mixin buttonHover {
+	background-color: $colorMainDark;
+	color: white;
+	opacity: 0.8;
 }

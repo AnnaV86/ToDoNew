@@ -1,9 +1,9 @@
-@import '../../../../../../styles/mixins.scss';
-@import '../../../../../../styles/variables.scss';
+@import '../../../../styles/mixins.scss';
+@import '../../../../styles/variables.scss';
 
 .buttons {
-	@include sizeBlock(400px, 40px);
-	@include displayFlex(row, space-around, center);
+	@include sizeBlock(800px, 40px);
+	@include displayFlex(row, space-between, center);
 
 	button {
 		@include sizeBlock(150px, 40px);
@@ -14,5 +14,9 @@
 		cursor: pointer;
 		color: $colorMainDark;
 		margin-left: 10px;
+
+		&:hover {
+			@include buttonHover;
+		}
 	}
 }

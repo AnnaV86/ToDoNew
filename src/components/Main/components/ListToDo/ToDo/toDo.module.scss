@@ -8,14 +8,14 @@
 
 	.title {
 		@include font(20px, 20px);
-		width: 610px;
+		width: 800px;
 		color: $colorMainDark;
 		margin: 0;
 		text-align: start;
 	}
 
 	.buttons {
-		width: 200px;
+		width: 100px;
 		@include displayFlex(row, flex-end, center);
 	}
 
@@ -33,14 +33,16 @@
 	}
 
 	.buttonImportActive {
+		margin: 0;
+		margin-right: 20px;
+		background-image: url(../../../../../images/star_fill.svg);
+	}
+
+	.buttonCompleted {
 		background-image: url(../../../../../images/check_circle_line.svg);
 	}
 
-	.buttonComplet {
-		background-image: url(../../../../../images/check_circle_line.svg);
-	}
-
-	.buttonCompletActive {
+	.buttonCompletedActive {
 		background-image: url(../../../../../images/check_circle_fill.svg);
 	}
 
