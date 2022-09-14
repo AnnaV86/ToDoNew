@@ -13,7 +13,7 @@ export const Main: FC = observer(() => {
 	const [listTodo, setListTodo] = useState<IToDo[]>([]);
 
 	const filteringTodoList = useCallback((filter: string) => {
-		const TodoFilter = filterTodoList(filter);
+		const TodoFilter = filterTodoList(filter, todos.todoList);
 		setListTodo(TodoFilter);
 	}, []);
 
