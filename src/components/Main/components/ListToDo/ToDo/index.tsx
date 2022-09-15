@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { IToDo } from '../../../../../models';
 import todos from '../../../../../store/todos';
-
 import style from './toDo.module.scss';
 
 interface ToDoProps {
@@ -9,11 +8,11 @@ interface ToDoProps {
 }
 
 export const ToDo: FC<ToDoProps> = React.memo(({ toDo }) => {
-	console.log('render ToDo');
 	const { id, title, important, completed } = toDo;
 	const classImportantButton = important
 		? style.buttonImportActive
 		: style.buttonImport;
+
 	const classCompletedButton = completed
 		? style.buttonCompletedActive
 		: style.buttonCompleted;

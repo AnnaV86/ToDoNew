@@ -1,5 +1,4 @@
 import { IToDo } from '../models';
-import todos from '../store/todos';
 
 export const filterTodoList = (filter: string, todoList: IToDo[]) => {
 	switch (filter) {

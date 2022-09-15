@@ -18,9 +18,11 @@ export const addNewTodoFetch = async (newTodo: IToDo) => {
 		},
 		body: JSON.stringify(newTodo)
 	});
+
 	if (!response.ok) {
 		throw new Error(response.statusText);
 	}
+
 	return await response.json();
 };
 
@@ -28,9 +30,11 @@ export const deleteTodoFetch = async (id: string) => {
 	const response = await fetch(`http://localhost:3010/todo/${id}`, {
 		method: 'DELETE'
 	});
+
 	if (!response.ok) {
 		throw new Error(response.statusText);
 	}
+
 	return await response.json();
 };
 

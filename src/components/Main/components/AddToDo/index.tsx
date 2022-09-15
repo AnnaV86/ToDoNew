@@ -4,11 +4,10 @@ import todos from '../../../../store/todos';
 import style from './addToDo.module.scss';
 
 export const AddToDo: FC = React.memo(() => {
-	console.log('render AddToDo');
 	const [value, setValue] = useState('');
 
-	const onChangeNewTodo = (e: React.ChangeEvent<HTMLInputElement>) => {
-		setValue(e.target.value);
+	const onChangeNewTodo = (evt: React.ChangeEvent<HTMLInputElement>) => {
+		setValue(evt.target.value);
 	};
 
 	const onClickAddTodo = () => {
@@ -22,6 +21,7 @@ export const AddToDo: FC = React.memo(() => {
 			todos.addTodo(newTodo);
 			setValue('');
 		}
+
 		return;
 	};
 

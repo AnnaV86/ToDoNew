@@ -1,52 +1,34 @@
 {
-	"todo": [
-		{
-			"id": "lf-3azCh5y1NnhgwT2PS2",
-			"title": "Завтрак",
-			"important": false,
-			"completed": false
-		},
-		{
-			"id": "x6uvmzgm1yv0uhgfhTvRP",
-			"title": "Отвезти детей в сад и школу",
-			"important": false,
-			"completed": true
-		},
-		{
-			"id": "Qqq2tBdO1oSc8oInW_o_2",
-			"title": "Работа",
-			"important": false,
-			"completed": false
-		},
-		{
-			"id": "gIyTxditGxjEL4ROqnzkz",
-			"title": "Забрать детей",
-			"important": true,
-			"completed": true
-		},
-		{
-			"id": "w15ahbQetvHWK5FrWiXs8",
-			"title": "Смотреть тв",
-			"important": true,
-			"completed": false
-		},
-		{
-			"id": "lNsg28UoEyOsw1o1QhZKV",
-			"title": "Новая задача",
-			"important": false,
-			"completed": false
-		},
-		{
-			"id": "nMCW0pAOz4i0tQNVzn6lE",
-			"title": "Это очень-очень длинный текст, который покажет как ведет себя текст в адаптивной верстке, вот так.",
-			"important": false,
-			"completed": true
-		},
-		{
-			"id": "_exv3GdTg7bmWnejlckf-",
-			"title": "Новая задача",
-			"important": false,
-			"completed": false
-		}
-	]
+  "todo": [
+    {
+      "id": "lf-3azCh5y1NnhgwT2PS2",
+      "title": "Завтрак",
+      "important": true,
+      "completed": false
+    },
+    {
+      "id": "Qqq2tBdO1oSc8oInW_o_2",
+      "title": "Работа",
+      "important": false,
+      "completed": true
+    },
+    {
+      "id": "w15ahbQetvHWK5FrWiXs8",
+      "title": "Смотреть тв",
+      "important": false,
+      "completed": false
+    },
+    {
+      "id": "lNsg28UoEyOsw1o1QhZKV",
+      "title": "Новая задача",
+      "important": false,
+      "completed": true
+    },
+    {
+      "id": "epPN8eZpGistkpkOP5jW3",
+      "title": "Магазин",
+      "important": false,
+      "completed": false
+    }
+  ]
 }

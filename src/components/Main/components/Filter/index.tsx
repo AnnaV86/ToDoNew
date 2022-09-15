@@ -1,12 +1,10 @@
 import React, { FC } from 'react';
-
 import style from './filter.module.scss';
 
 interface FilterProps {
 	filteringTodoList: (filter: string) => void;
 }
 export const Filter: FC<FilterProps> = React.memo(({ filteringTodoList }) => {
-	console.log('render Filter');
 	const onClickFilter = (evt: React.MouseEvent<HTMLButtonElement>) => {
 		const { name } = evt.currentTarget;
 		filteringTodoList(name);

@@ -12,6 +12,7 @@
 -   MobX
 -   TypeScript
 -   JEST
+-   Webpack
 -   Eslint
 
 # Техническое задание

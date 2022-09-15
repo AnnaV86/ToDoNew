@@ -1,15 +1,13 @@
 import React, { FC } from 'react';
 import { IToDo } from '../../../../models';
-
-import style from './listToDo.module.scss';
 import { ToDo } from './ToDo';
+import style from './listToDo.module.scss';
 
 interface ListToDoProps {
 	todoList: IToDo[];
 }
 
 export const ListToDo: FC<ListToDoProps> = ({ todoList }) => {
-	console.log('render ListToDo');
 	return (
 		<section className={style.wrapper}>
 			<ul className={style.list}>

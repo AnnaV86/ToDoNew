@@ -1,4 +1,3 @@
-import { describe, test, expect } from '@jest/globals';
 import { filterTodoList } from '../utils/filter';
 
 describe('Функция filter, которая возвращает отфильтрованный массив', () => {

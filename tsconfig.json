@@ -14,13 +14,14 @@
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
 		"typeRoots": ["./declarations"],
-		"allowJs": true
+		"allowJs": true,
+		"types": ["jest", "node", "@types/jest"]
 	},
 	"ts-node": {
 		"compilerOptions": {
 			"module": "commonjs"
 		}
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "__tests__/*.ts"],
 	"exclude": ["node_modules"]
 }

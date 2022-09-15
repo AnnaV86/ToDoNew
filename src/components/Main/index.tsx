@@ -9,7 +9,6 @@ import { IToDo } from '../../models/todo';
 import { Filter } from './components/Filter';
 
 export const Main: FC = observer(() => {
-	console.log('render Main');
 	const [listTodo, setListTodo] = useState<IToDo[]>([]);
 
 	const filteringTodoList = useCallback((filter: string) => {
@@ -20,6 +19,7 @@ export const Main: FC = observer(() => {
 	useEffect(() => {
 		setListTodo(todos.todoList);
 	}, [todos.todoList]);
+
 	useEffect(() => {
 		(async () => {
 			await todos.getTodo();
